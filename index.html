@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="title">Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Thasadith" rel="stylesheet">
+
+</head>
+<body class="wrapper">
+    <div class="form">
+        <h1>Survery Form</h1>
+        <br>
+        <p id="description">Please join our mailing list for future communication!</p>
+        <br>
+        <form id="survey-form" method="GET" action="https://crosscorigin.me/https://freecodecamp.com">
+            <div>
+            <label for="fullName" id="name-label" class="full-name">Full Name:</label>
+            <input id="name" type="text" placeholder="Name">
+            </div>
+            <br>
+            <div>
+            <label for="email" id="email-label" class="email">Email: </label>
+            <input id="email" type="email" required placeholder="Email">
+            </div>
+            <br>
+            <div>
+            <label for="age" id="number-label" class="age">Age:</label>
+            <input type="number" name="age" id="number" min="18" max="100" class="input-field" placeholder="Age" required>
+            </div>
+            <br>
+            <div>
+            <label for="language" class="language">Preferred Language:</label>
+            <div id="dropdown">
+                <select id="langOption" name="prefLang">
+                    <option disabled value>Select an option</option>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Swahili">Swahili</option>
+                    <option value="Xhosa">Xhosa</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Polish">Polish</option>
+                </select>
+            </div>
+            </div>
+            <br>
+            <div>
+            <label for="pronouns" class="pronouns">Preferred Pronouns:</label>
+            <br>
+            <br>    
+                <input type="radio" name="pronouns" value="heHim"> He/him<br>
+                <input type="radio" name="pronouns" value="sheHer"> She/Her<br>
+                <input type="radio" name="pronouns" value="themThey"> Them/They
+            <br>
+            </div>
+            <br>
+            <div>
+            <label for="favShow" class="fave-show">Please Select Your Favorite Shows:</label>
+                <ul id="favoriteShow">
+                    <li class="checkbox"><label for="favShow"><input name="favShow" value="1" type="checkbox" class="fave-show">Terrance House</label></li>
+                    <li class="checkbox"><label for="favShow"><input name="favShow" value="2" type="checkbox" class="fave-show">Star Trek: The Next Generation</label></li>
+                    <li class="checkbox"><label for="favShow"><input name="favShow" value="3" type="checkbox" class="fave-show">Star Trek: Voyager</label></li>
+                    <li class="checkbox"><label for="favShow"><input name="favShow" value="4" type="checkbox" class="fave-show">The Office</label></li>
+                    <li class="checkbox"><label for="favShow"><input name="favShow" value="5" type="checkbox" class="fave-show">Parks And Recreation</label></li>
+                    <li class="checkbox"><label for="favShow"><input name="favShow" value="6" type="checkbox" class="fave-show">The Good Place</label></li>
+                </ul>
+            </div>
+            <br>
+                <div>
+                    <div>
+                        <label for="comment">Questions/Comments:</label>
+                    </div>
+                    <br>
+                    <div>
+                        <textarea id="comments" class="input-field" name="comment" placeholder="What did you say?"></textarea>
+                    </div>
+                </div>
+                <br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+    </div>
+    <footer>
+        <p>Thanks for coming to my TED Talk</p>
+    </footer>
+    <!--FCC Test Code-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
